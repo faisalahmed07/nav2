@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li,
+ol{
+    list-style: none;
+}
+
+.NavBar{
+    background-color: #254336;
+}
+
+.NavBar ul {
+    text-align: center;
+}
+.NavBar ul li{
+    display: inline-block;
+    height: 80px;
+}
+
+.NavBar ul li a{
+    color: #fff;
+    margin-top: 12px;
+    padding: 14px 19px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.NavBar ul li a:hover{
+    background-color: #6B8A7A;
+    transition: 0.5s all ease;
+}
+
+.NavBar{
+    position: relative;
+}
+.NavBar ul li.btn {
+   position: absolute;
+   right: 60px;
+}
+
+.NavBar ul li.btn:hover a{
+    background-color: #DAD3BE;
+    color: #000;
+    border: none;
+    margin-top: 1px;
+}
+
+.NavBar ul li.btn a{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: 0.5s all ease;
+}
+
+.about .submenu{
+    position: absolute;
+    top: 100%;
+    background-color: #DAD3BE;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    top: 400px;
+}
+
+.NavBar .about:hover span i{
+    transform: rotate(180deg);
+    transition: 0.5s all ease;
+}
+
+.NavBar .about:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s all ease;
+    top: 100%;
+}
+
+.about .submenu li{
+    width: 100%;
+}
+
+.about{
+    position: relative;
+}
+
+.more{
+    position: relative;
+}
+.subsubmenu{
+    position: absolute;
+    background-color: #6B8A7A;
+    left: 400px;
+    width: 220px;
+    opacity: 0;
+    visibility:hidden;
+}
+
+.more:hover .subsubmenu{
+    left: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s all ease;
+}
